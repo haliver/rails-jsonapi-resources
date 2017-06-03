@@ -10,14 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170603131735) do
+ActiveRecord::Schema.define(version: 20170611132852) do
 
-  create_table "enquetes", force: :cascade do |t|
-    t.string "title", null: false
-    t.datetime "started_at"
-    t.datetime "ended_at"
-    t.datetime "deleted_at"
-    t.boolean "is_active", default: true
+  create_table "reviews", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "user_id", null: false, comment: "user_id"
+    t.text "comment", comment: "コメント"
+    t.timestamp "deleted_at", comment: "削除日時"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name", null: false, comment: "名前"
+    t.string "email", null: false, comment: "メールアドレス"
+    t.timestamp "deleted_at", comment: "削除日時"
+    t.string "password", null: false, comment: "パスワード"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

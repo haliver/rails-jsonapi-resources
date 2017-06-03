@@ -7,10 +7,10 @@ end
 
 gem 'rails', '~> 5.1.1'
 
-gem 'sqlite3'
 gem 'therubyracer'
 
 gem 'activerecord-import'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'jsonapi-resources', git: 'git@github.com:cerebris/jsonapi-resources.git', ref: '5e4fd81e516fe73395d8607520e96d6a013ff741'
 
 gem 'sidekiq'
 gem 'aasm'
@@ -52,6 +53,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
+  gem 'rubocop', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry'
   gem 'pry-rails'
