@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'jsonapi-resources', git: 'git@github.com:cerebris/jsonapi-resources.git', ref: '5e4fd81e516fe73395d8607520e96d6a013ff741'
+gem 'jsonapi-resources'
 
 gem 'sidekiq'
 gem 'aasm'

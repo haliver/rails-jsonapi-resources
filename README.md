@@ -1,11 +1,25 @@
-# README
+# rails-jsonapi-resources
 
-### sample project
+### Environment
 * Ruby 2.3.1
 * Ruby on Rails 5.1.1
 * use `jsonapi-resources`
 
-### How to use
+### Installation
+
+```
+git clone git@github.com:haliver/rails-jsonapi-resources.git
+```
+
+### How to use?
+
+* First of all we will make a data.
+
+```
+rake db:create
+rake db:migrate
+rake db:migrate:seeds
+```
 
 * As usual `rails s`
 

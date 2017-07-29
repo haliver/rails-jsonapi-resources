@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170611132852) do
 
+  create_table "blue_test", id: :integer, unsigned: true, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  end
+
   create_table "reviews", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id", null: false, comment: "user_id"
     t.text "comment", comment: "コメント"
