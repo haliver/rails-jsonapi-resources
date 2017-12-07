@@ -1,0 +1,16 @@
+sudo: false
+language: ruby
+rvm:
+- 2.3.1
+branches:
+  only: master
+
+cache: bundler
+
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+
+script:
+  - bundle exec rake test
