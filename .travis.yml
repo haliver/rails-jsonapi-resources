@@ -1,15 +1,20 @@
 sudo: false
 language: ruby
 rvm:
-- 2.3.1
+  - 2.3.3
+
+bundler_args: "--without development --deployment"
+
 branches:
   only: master
+services:
+  - redis-server
 
 cache: bundler
 
 before_script:
-  - bundle exec rake db:create
-  - bundle exec rake db:migrate
+  - cp config/database.travis.yml config/database.yml
 
 script:
-  - bundle exec rake test
+  - bin/rails db:migrate RAILS_ENV=test
+  - bin/rails test

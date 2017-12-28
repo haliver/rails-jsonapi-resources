@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :review do
-    sequence(:user_id) { |n| "#{n}" }
+    sequence(:user_id, &:to_s)
     comment '真実はいつも一つ！！'
   end
 end

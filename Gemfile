@@ -20,10 +20,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'jsonapi-resources'
-
-gem 'sidekiq'
-gem 'aasm'
-gem 'kaminari'
+gem 'redis'
+gem 'redis-rails'
 gem 'enumerize'
 
 group :test do
@@ -32,7 +30,6 @@ group :test do
   gem 'timecop'
   gem 'simplecov', require: false
   gem 'simplecov-rcov', require: false
-  gem 'vcr'
 end
 
 group :development, :test do
@@ -45,7 +42,7 @@ group :development, :test do
   gem 'rspec-json_expectations', require: false
   gem 'rspec-parameterized'
   gem 'rspec-activemodel-mocks'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'database_cleaner'
 end
 
