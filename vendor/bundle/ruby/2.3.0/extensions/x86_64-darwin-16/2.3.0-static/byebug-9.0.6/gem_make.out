@@ -1,0 +1,19 @@
+current directory: /Users/haliver/works/rails-jsonapi-resources/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/Users/haliver/.rbenv/versions/2.3.3/bin/ruby -r ./siteconf20171229-49419-kn5r60.rb extconf.rb
+creating Makefile
+
+current directory: /Users/haliver/works/rails-jsonapi-resources/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/haliver/works/rails-jsonapi-resources/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/haliver/works/rails-jsonapi-resources/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20171229-49419-vgp35u/byebug
