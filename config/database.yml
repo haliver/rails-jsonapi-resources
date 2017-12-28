@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: blue_development
+  database: db_development
 
 test:
   <<: *default
-  database: blue_test
+  database: db_test
 
 production:
   <<: *default
-  database: blue_production
-  username: blue
-  password: <%= ENV['BLUE_DATABASE_PASSWORD'] %>
+  database: db_production
+  username: 
+  password: 

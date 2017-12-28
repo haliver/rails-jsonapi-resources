@@ -1,5 +1,7 @@
 # rails-jsonapi-resources
 
+[![Build Status](https://travis-ci.org/haliver/rails-jsonapi-resources.svg?branch=master)](https://travis-ci.org/haliver/rails-jsonapi-resources)
+
 ### Environment
 * Ruby 2.3.1
 * Ruby on Rails 5.1.1
@@ -16,9 +18,9 @@ git clone git@github.com:haliver/rails-jsonapi-resources.git
 * First of all we will make a data.
 
 ```
-rake db:create
-rake db:migrate
-rake db:migrate:seeds
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:seed
 ```
 
 * As usual `rails s`
