@@ -3,8 +3,6 @@ language: ruby
 rvm:
   - 2.3.3
 
-bundler_args: "--without development --deployment"
-
 branches:
   only: master
 services:
