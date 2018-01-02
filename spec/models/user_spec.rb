@@ -21,8 +21,8 @@ RSpec.describe User, type: :model do
 
   describe '#scopes' do
     context '.deletes' do
-      let!(:user_a) { FactoryGirl.create(:user) }
-      let!(:user_b) { FactoryGirl.create(:user, deleted_at: Time.zone.now) }
+      let!(:user_a) { FactoryBot.create(:user) }
+      let!(:user_b) { FactoryBot.create(:user, deleted_at: Time.zone.now) }
       it { expect(User.deletes).to eq([user_b]) }
     end
   end

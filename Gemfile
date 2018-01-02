@@ -26,7 +26,6 @@ gem 'enumerize'
 
 group :test do
   gem 'shoulda-matchers'
-  gem 'webmock'
   gem 'timecop'
   gem 'simplecov', require: false
   gem 'simplecov-rcov', require: false
@@ -34,14 +33,8 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-  gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'rspec-its', require: false
-  gem 'rspec-json_expectations', require: false
-  gem 'rspec-parameterized'
-  gem 'rspec-activemodel-mocks'
   gem 'factory_bot_rails'
   gem 'database_cleaner'
 end
